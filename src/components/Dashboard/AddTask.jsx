@@ -18,7 +18,7 @@ const AddTask = ({ setAddTaskDiv }) => {
 
     try {
       const response = await axios.post(
-        "https://task-zen-backend.vercel.app/api/v1/add-task",
+        "https://task-zen-backend.vercel.app/api/v1/tasks/add-task",
         task,
         { withCredentials: true }
       );

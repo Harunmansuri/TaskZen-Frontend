@@ -11,7 +11,7 @@ const EditTask = ({ task, setEditTaskDiv, refreshTasks }) => {
   const updateTask = async (e) => {
     e.preventDefault();
     await axios.put(
-      `https://task-zen-backend.vercel.app/api/v1/edit-task/${task._id}`,
+      `https://task-zen-backend.vercel.app/api/v1/tasks/edit-task/${task._id}`,
       formData,
       { withCredentials: true }
     );
@@ -21,7 +21,7 @@ const EditTask = ({ task, setEditTaskDiv, refreshTasks }) => {
 
   const deleteTask = async () => {
     await axios.delete(
-      `http://localhost:3000/api/v1/delete-task/${task._id}`,
+      `https://task-zen-backend.vercel.app/api/v1/tasks/delete-task/${task._id}`,
       { withCredentials: true }
     );
     refreshTasks();

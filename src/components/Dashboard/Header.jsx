@@ -9,7 +9,7 @@ const Header = ({ setAddTaskDiv }) => {
 const handleLogout = async () => {
   try {
     await axios.post(
-      "https://task-zen-backend.vercel.app//api/v1/users/logout",
+      "https://task-zen-backend.vercel.app/api/v1/users/logout",
       {},
       { withCredentials: true } // 🔥 MOST IMPORTANT
     );

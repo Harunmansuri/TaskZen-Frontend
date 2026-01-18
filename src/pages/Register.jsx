@@ -19,7 +19,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://task-zen-backend.vercel.app/v1/users/register",
+        "https://task-zen-backend.vercel.app/api/v1/users/register",
         values
       );
 
